@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio web simple</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        .all-mio {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            height: 97vh;
+        }
+        .bordejaja {
+            max-width: 80vw;
+            border: 2px solid var(--btnBg);
+            border-radius: 15%;
+            padding: 2%;
+        }
+
+        .bordejaja ul {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body class="dark-theme">
+    <div class="all-mio">
+        <div class="bordejaja">
+            <h1>Lista de pendientes</h1>
+            <p id="msg">Pendientes actuales:</p>
+            <ul>
+                <li class="list">Añadir estilos visuales</li>
+                <li class="list">Añadir el tema nocturno y diurno</li>
+                <li>Habilitar el cambio entre los temas</li>
+            </ul>
+            <div>
+                <button class="btn">Light</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
